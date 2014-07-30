@@ -30,16 +30,39 @@ class Model_about_us extends CI_Model {
         }
     }
 
-    public function send_contact_msg() {
-        if ($this->session->userdata('logged_in')) {
-            $user_data = $this->get_user_info();
-            $email = $user_data->Email;
-            $name = $user_data->Name;
-        } else {
-            $email = $this->input->post('email');
-            $name = $this->input->post('name');
-        }
+    public function send_user_contact_msg() {
+        $user_data = $this->get_user_info();
         $title = $this->input->post('title');
+        $email = $user_data->Email;
+        $name = $user_data->Name;
+        $content = $this->input->post('content');
+
+        $this->load->library('email');
+        $this->email->from('account@bridgeous.com', '比橙网');
+        $this->email->to('feedbacks@bridgeous.com');
+        $this->email->subject($title);
+        //$this->email->reply_to('noreply@noreply.com');
+
+        $message = '<!DOCTYPE html><head>
+                    <meta http-equiv="Content-Type" content="text/html"; charset="utf-8"/>
+                    </head><body>';
+        $message .= '<p>用户邮箱:' . $email . '</p>';
+        $message .= '<p>用户名称:' . $name . '</p>';
+        $message .= '<p>问题描述:' . $content . '</p>';
+        $message .= '<p>问题提交时间:' . date('Y-m-d H:i:s') . '</p>';
+        $message .= '</body></html>';
+
+        $this->email->message($message);
+        if (!$this->email->send()) {
+            show_error($this->email->print_debugger());
+        }
+        return true;
+    }
+
+    public function send_guest_contact_msg() {
+        $title = $this->input->post('title');
+        $email = $this->input->post('email');
+        $name = $this->input->post('name');
         $content = $this->input->post('content');
 
         $this->load->library('email');

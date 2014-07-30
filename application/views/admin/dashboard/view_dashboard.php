@@ -1,0 +1,1 @@
+<div class="margin-bot"><span class="setting-title"><?= lang('dashboard')?></span></div>

@@ -4,11 +4,7 @@
     <div class="clearfix">
         <ul id="footer-menu">
             <li><a href="/about_us"><?= lang('about_us') ?></a></li>
-            <?php if (!$this->session->userdata('logged_in')) { ?>
-                <li><a href="/about_us/guest_contact_us"><?= lang('contact_us') ?></a></li>
-            <?php } else { ?>
-                <li><a href="/about_us/contact_us"><?= lang('contact_us') ?></a></li>
-            <?php } ?>
+            <li><a href="/about_us/contact_us"><?= lang('contact_us') ?></a></li>
             <li><a href="/about_us/terms"  target="_blank"><?= lang('terms') ?></a></li>
             <li><a href=""  target="_blank"><?= lang('privacy') ?></a></li>
         </ul>

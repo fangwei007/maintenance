@@ -26,6 +26,10 @@ class About_us extends CI_Controller {
     public function contact_us() {
         if (isset($_POST['publish'])) {
             $this->form_validation->set_rules('title', 'lang:title', 'trim|required|max_length[100]|xss_clean');
+            if (!$this->session->userdata('logged_in')) {
+                $this->form_validation->set_rules('email', 'lang:email', 'trim|required|max_length[30]|valid_email|xss_clean');
+                $this->form_validation->set_rules('name', 'lang:name', 'trim|required|xss_clean');
+            }
             $this->form_validation->set_rules('content', 'lang:content', 'trim|required|xss_clean');
 
             if ($this->form_validation->run() == FALSE) {
@@ -33,7 +37,7 @@ class About_us extends CI_Controller {
                 output_views('about_us/view_contact_us', '');
             } else {
                 //result returns true or false
-                $result = $this->model_about_us->send_user_contact_msg();
+                $result = $this->model_about_us->send_contact_msg();
                 if ($result) {
                     //saved sucessful
                     $this->session->set_flashdata('msg', '发布成功！');
@@ -46,34 +50,6 @@ class About_us extends CI_Controller {
             }
         } else {
             output_views('about_us/view_contact_us', '');
-        }
-    }
-
-    public function guest_contact_us() {
-        if (isset($_POST['publish'])) {
-            $this->form_validation->set_rules('title', 'lang:title', 'trim|required|max_length[100]|xss_clean');
-            $this->form_validation->set_rules('email', 'lang:email', 'trim|required|max_length[30]|valid_email|xss_clean');
-            $this->form_validation->set_rules('name', 'lang:name', 'trim|required|xss_clean');
-            $this->form_validation->set_rules('content', 'lang:content', 'trim|required|xss_clean');
-
-            if ($this->form_validation->run() == FALSE) {
-                //user didn't validate, send back to add form and show errors
-                output_views('about_us/view_guest_contact_us', '');
-            } else {
-                //result returns true or false
-                $result = $this->model_about_us->send_guest_contact_msg();
-                if ($result) {
-                    //saved sucessful
-                    $this->session->set_flashdata('msg', '发布成功！');
-                    redirect('/about_us/guest_contact_us', 'location');
-                } else {
-                    //saved sucessful
-                    $this->session->set_flashdata('error', '发布失败！');
-                    redirect('/about_us/guest_contact_us', 'location');
-                }
-            }
-        } else {
-            output_views('about_us/view_guest_contact_us', '');
         }
     }
 

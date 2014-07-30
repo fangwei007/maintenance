@@ -5,6 +5,7 @@
         <ul id="footer-menu">
             <li><a href="/about_us"><?= lang('about_us') ?></a></li>
             <li><a href="/about_us/contact_us"><?= lang('contact_us') ?></a></li>
+            <li><a href="/about_us/report_bug"><?= lang('report_bug') ?></a></li>
             <li><a href="/about_us/terms"  target="_blank"><?= lang('terms') ?></a></li>
             <li><a href=""  target="_blank"><?= lang('privacy') ?></a></li>
         </ul>

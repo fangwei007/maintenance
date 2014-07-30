@@ -103,6 +103,7 @@ $lang['my_profile'] = "个人资料";
 //footer
 $lang['about_us'] = "关于我们";
 $lang['contact_us'] = "联系我们";
+$lang['report_bug'] = "意见或错误反馈";
 $lang['terms'] = "版权所有";
 $lang['privacy'] = "保护隐私权";
 

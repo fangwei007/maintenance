@@ -18,7 +18,7 @@ class About_us extends CI_Controller {
     public function about_bg() {
         output_views('about_us/view_about_bg');
     }
-    
+
     public function contact_us() {
         output_views('about_us/view_contact_us');
     }

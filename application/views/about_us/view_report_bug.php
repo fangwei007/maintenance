@@ -1,6 +1,6 @@
 <div class="margin-bot"><span class="setting-title"><?= "意见或错误反馈" ?></span></div>
-<p>微信：比橙BridGeous
-    Email: info@bridgeou.com</p>
+<p>微信：比橙BridGeous</p>
+<p>Email: info@bridgeou.com</p>
 <?php
 echo validation_errors('<div class="alert alert-danger">', '</div>');
 echo ($this->session->flashdata('msg')) ? ('<div class="alert alert-success">' . $this->session->flashdata('msg') . '</div>') : '';

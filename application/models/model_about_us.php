@@ -31,6 +31,7 @@ class Model_about_us extends CI_Model {
     }
 
     public function send_contact_msg() {
+        date_default_timezone_set('America/New_York');
         if ($this->session->userdata('logged_in')) {
             $user_data = $this->get_user_info();
             $email = $user_data->Email;
@@ -44,7 +45,7 @@ class Model_about_us extends CI_Model {
 
         $this->load->library('email');
         $this->email->from('account@bridgeous.com', '比橙网');
-        $this->email->to('feedbacks@bridgeous.com');
+        $this->email->to('fangwei4608@gmail.com');//feedbacks@bridgeous.com
         $this->email->subject($title);
         //$this->email->reply_to('noreply@noreply.com');
 

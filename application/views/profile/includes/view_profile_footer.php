@@ -1,7 +1,7 @@
 <section class="sidebar-right">	
 	
     <aside class="sidebar-right-block">
-        <a href="#"><span class="title-cn">更多文章</span>|<span class="title-en">Read More</span></a>
+        <a href="<?= base_url()?>posts/show_posts/start_up/article"><span class="title-cn">更多文章</span>|<span class="title-en">Read More</span></a>
             <ul>
                  <?php 
                   if (!empty($sidebar_articles)) {
@@ -18,7 +18,7 @@
     </aside>
     
     <aside class="sidebar-right-block">
-        <a href="#"><span class="title-cn">更多活动</span>|<span class="title-en">Read More</span></a>
+        <a href="<?= base_url()?>posts/show_posts/start_up/event"><span class="title-cn">更多活动</span>|<span class="title-en">Read More</span></a>
             <ul>
                  <?php 
                   if (!empty($sidebar_events)) {
@@ -35,7 +35,7 @@
     </aside>
     
     <aside class="sidebar-right-block">
-        <a href="#"><span class="title-cn">更多职位</span>|<span class="title-en">Read More</span></a>
+        <a href="<?= base_url()?>positions/show_positions"><span class="title-cn">更多职位</span>|<span class="title-en">Read More</span></a>
             <ul>
                  <?php 
                   if (!empty($sidebar_positions)) {

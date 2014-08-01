@@ -25,7 +25,7 @@ $sess_avatar = ($this->session->userdata('avatar')) ? $this->session->userdata('
     <!-- / sidebar-article-author-block -->
    
     <aside class="sidebar-first-block">
-        	<a href="#"><span class="title-cn">更多文章</span>|<span class="title-en">Read More</span></a>
+        	<a href="<?= base_url()?>posts/show_posts/start_up/article"><span class="title-cn">更多文章</span>|<span class="title-en">Read More</span></a>
 
 		<div class="sidebar-first-list-block">
 			<ul>

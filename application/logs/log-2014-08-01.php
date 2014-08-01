@@ -159,3 +159,25 @@ ERROR - 2014-08-01 16:03:06 --> 404 Page Not Found --> assets
 ERROR - 2014-08-01 16:03:07 --> 404 Page Not Found --> assets
 ERROR - 2014-08-01 16:03:08 --> 404 Page Not Found --> assets
 ERROR - 2014-08-01 16:03:35 --> 404 Page Not Found --> assets
+ERROR - 2014-08-01 16:15:04 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/weifang/Sites/C/repos/bg_maintenance/maintenance/system/database/drivers/mysql/mysql_driver.php 91
+ERROR - 2014-08-01 16:15:08 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/weifang/Sites/C/repos/bg_maintenance/maintenance/system/database/drivers/mysql/mysql_driver.php 91
+ERROR - 2014-08-01 16:15:11 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/weifang/Sites/C/repos/bg_maintenance/maintenance/system/database/drivers/mysql/mysql_driver.php 91
+ERROR - 2014-08-01 16:15:11 --> Severity: Notice  --> Undefined property: stdClass::$Category /Users/weifang/Sites/C/repos/bg_maintenance/maintenance/application/views/positions/view_position.php 2
+ERROR - 2014-08-01 16:15:11 --> Could not find the language line ""
+ERROR - 2014-08-01 16:15:11 --> Severity: Notice  --> Undefined property: stdClass::$Type /Users/weifang/Sites/C/repos/bg_maintenance/maintenance/application/views/positions/view_position.php 2
+ERROR - 2014-08-01 16:15:11 --> Could not find the language line ""
+ERROR - 2014-08-01 16:15:14 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/weifang/Sites/C/repos/bg_maintenance/maintenance/system/database/drivers/mysql/mysql_driver.php 91
+ERROR - 2014-08-01 16:15:16 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/weifang/Sites/C/repos/bg_maintenance/maintenance/system/database/drivers/mysql/mysql_driver.php 91
+ERROR - 2014-08-01 16:15:18 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/weifang/Sites/C/repos/bg_maintenance/maintenance/system/database/drivers/mysql/mysql_driver.php 91
+ERROR - 2014-08-01 16:15:18 --> Severity: Notice  --> Undefined property: stdClass::$Category /Users/weifang/Sites/C/repos/bg_maintenance/maintenance/application/views/positions/view_position.php 2
+ERROR - 2014-08-01 16:15:18 --> Could not find the language line ""
+ERROR - 2014-08-01 16:15:18 --> Severity: Notice  --> Undefined property: stdClass::$Type /Users/weifang/Sites/C/repos/bg_maintenance/maintenance/application/views/positions/view_position.php 2
+ERROR - 2014-08-01 16:15:18 --> Could not find the language line ""
+ERROR - 2014-08-01 16:15:22 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/weifang/Sites/C/repos/bg_maintenance/maintenance/system/database/drivers/mysql/mysql_driver.php 91
+ERROR - 2014-08-01 16:32:14 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/weifang/Sites/C/repos/bg_maintenance/maintenance/system/database/drivers/mysql/mysql_driver.php 91
+ERROR - 2014-08-01 16:32:16 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/weifang/Sites/C/repos/bg_maintenance/maintenance/system/database/drivers/mysql/mysql_driver.php 91
+ERROR - 2014-08-01 16:32:17 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/weifang/Sites/C/repos/bg_maintenance/maintenance/system/database/drivers/mysql/mysql_driver.php 91
+ERROR - 2014-08-01 16:32:17 --> Severity: Notice  --> Undefined property: stdClass::$Category /Users/weifang/Sites/C/repos/bg_maintenance/maintenance/application/views/positions/view_position.php 2
+ERROR - 2014-08-01 16:32:17 --> Could not find the language line ""
+ERROR - 2014-08-01 16:32:17 --> Severity: Notice  --> Undefined property: stdClass::$Type /Users/weifang/Sites/C/repos/bg_maintenance/maintenance/application/views/positions/view_position.php 2
+ERROR - 2014-08-01 16:32:17 --> Could not find the language line ""

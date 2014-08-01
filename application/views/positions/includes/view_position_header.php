@@ -6,9 +6,8 @@
             <div style="margin-bottom:20px; height:170px; background-image:url('<?=  base_url();?>assets/images/users_avatar/<?= insert_before_extension($author_info->Avatar, '_large')?>'); background-repeat:no-repeat;"></div>
         </a>
 
-        <div class="clearfix">
-        <div class="sidebar-article-author">作者：<?= $author_info->Nickname?></div>
-            <div class="sidebar-follow-author">
+        <div class="sidebar-author">作者：<?= $author_info->Nickname?></div>
+<!--        <div class="sidebar-follow-author">-->
                 <?php if($this->session->userdata('user_id') !== $author_info->UserID){ ?>
                     <?php if($this->session->userdata('logged_in')){ ?>
                         <?php if(empty($author_info->Follow)){ ?>
@@ -20,8 +19,7 @@
                             <span class="button-title-danger log-in"><?= lang('follow')?></span>
                     <?php } ?>
                 <?php } ?>
-            </div>
-        </div>
+<!--        </div>-->
 
 <!--        <a href="#"><div class="button-title">Send Message</div></a><br/>
         <a href="#"><div class="button-title">Connect on Linkedin</div></a>-->
